@@ -1,0 +1,21 @@
+.descricao {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    display: none; /* Adicionado para inicialmente ocultar a descrição */
+}
+
+.descricao.mostrar {
+    max-height: 1000px;
+    display: block; /* Exibe a descrição quando a classe mostrar está presente */
+}
+
+.conteudo{
+    display: flex;
+}

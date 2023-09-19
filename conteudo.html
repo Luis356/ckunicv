@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/menu-top.css">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <title>Conteudo - UniCV</title>
+</head>
+
+<body>
+
+    <header class="header-menu">
+
+        <nav class="menu-top">
+
+            <a href="inicial.html" id="logo"><img class="logo-top" src="images/unifcv-logo.png" alt=""></a>
+
+            <ul class="menu-lista">
+
+                <li class="itens-menu" id="item-login">
+                    <a class="link" href="entrar.html">ENTRAR</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="conteudo-principal">
+        <h1>Recursos UNICV</h1>
+        <div class="conteudo">
+            <ul class="lista-conteudo">
+                <li class="item" onclick="mostrarDescricao('cadastro')">Cadastro e Login Personalizados</li>
+                <li class="item" onclick="mostrarDescricao('checklists')">Criação de Checklists Customizados</li>
+                <li class="item" onclick="mostrarDescricao('datas')">Gerenciamento de Datas e Prazos</li>
+                <li class="item" onclick="mostrarDescricao('disciplinas')">Organização por Disciplinas</li>
+                <li class="item" onclick="mostrarDescricao('progresso')">Acompanhamento do Progresso</li>
+                <li class="item" onclick="mostrarDescricao('suporte')">Suporte ao Aluno</li>
+            </ul>
+
+            <div id="descricao" class="descricao"></div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        Copyright 2023
+        <br>
+        UniCV-Checklist
+    </footer>
+    <script src="conteudo.js"></script>
+</body>
+
+</html>

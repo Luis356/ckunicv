@@ -1,0 +1,64 @@
+.conteudo-principal {
+  margin: 0 auto;
+  width: 750px;
+  display: grid;
+  height: 80vh;
+  align-items: center;
+  align-content: space-evenly;
+  justify-content: start;
+}
+
+.descricao {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  margin-top: 10px;
+  background-color: red;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  display: none; /* Adicionado para inicialmente ocultar a descrição */
+}
+
+.descricao.mostrar {
+  max-height: 1000px;
+    width: 400px;
+    text-align: justify;
+    /* display: block; */
+    margin: 0px 0px 0px 30px;
+
+}
+
+.item {
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.item:hover{
+  background-color: red;
+  color: white;
+}
+
+.lista-conteudo{
+list-style: none;
+}
+
+.conteudo{
+  display: flex;
+}
+
+p{
+  color: white;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 6.6vh;
+  }  

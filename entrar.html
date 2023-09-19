@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/entrar.css" />
+  <link rel="stylesheet" href="css/menu-top.css">
+  <link rel="stylesheet" href="css/geral.css">
+  <title>Entrar</title>
+</head>
+
+<body>
+  <!-- MENU - TOP -->
+  <header class="header-menu">
+
+    <nav class="menu-top">
+
+      <a href="inicial.html" id="logo"><img class="logo-top" src="images/unifcv-logo.png" alt=""></a>
+
+
+    </nav>
+
+  </header>
+
+  <!-- CONTEUDO - PRINCIPAL -->
+  <main>
+
+    <div class="container">
+
+      <div class="conteudo primeiro-conteudo">
+
+        <div class="primeira-coluna">
+          <button id="signin" class="botao primeiro-botao">Login</button>
+        </div>
+
+        <div class="segunda-coluna">
+          <h2 class="titulo segundo-titulo">Cadastre-se</h2>
+
+          <!--  FORMULARIO  -   CADASTRO -->
+          <div class="form-cad-box">
+            <fieldset class="field-cad">
+              <legend>Cadastro</legend>
+
+              <form action="cad.php" method="post" class="form-cad">
+
+                <label class="label-input" for="nome-label">Usuario:</label>
+                <input type="text" name="nome_cadastro" id="nome-label" required>
+
+                <label class="label-input" for="email-label">Email:</label>
+                <input type="email" name="email_cadastro" id="email-label">
+
+                <label class="label-input" for="senha-label">Senha:</label>
+                <input type="password" name="senha_cadastro" id="senha-label">
+
+                <div class="botao-cadastro">
+                  <button class="btn-form" type="submit">Cadastre-se</button>
+                </div>
+
+              </form>
+
+
+
+            </fieldset>
+          </div>
+        </div>
+
+        <!-- FIM SEGUNDA COLUNA -->
+
+      </div>
+
+      <!--FIM PRIMEIRO CONTEUDO/CADASTRO -->
+
+      <div class="conteudo segundo-conteudo">
+
+        <div class="primeira-coluna">
+          <button id="signup" class="botao primeiro-botao">
+            Cadastre-se
+          </button>
+        </div>
+
+        <div class="segunda-coluna">
+          <h2 class="titulo segundo-titulo">Login</h2>
+
+          <!-- FORMULARIO - LOGIN-->
+
+          <div class="form-log-box">
+
+            <fieldset class="field-login">
+              <legend>Login</legend>
+
+              <div class="formulario-login">
+                <form action="log.php" method="post" class="form-log">
+
+                  <label class="label-input" for="nome-label">Usuario:</label>
+                  <input type="text" name="nome_login" id="nome-label" required>
+
+                  <label class="label-input" for="senha-label">Senha:</label>
+                  <input type="password" name="senha_login" id="senha-label" required>
+
+                  <div class="botao-login">
+                    <button class="btn-form" type="submit">Login</button>
+                  </div>
+
+                </form>
+              </div>
+
+            </fieldset>
+          </div>
+
+        </div>
+        <!--  SEGUNDA COLUNA -->
+
+      </div>
+      <!-- SEGUNDO CONTEUDO -->
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
